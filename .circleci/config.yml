@@ -9,7 +9,7 @@ workflows:
       - maven/test # checkout, build, test, and upload test results
 
         # run tests! and gen coe coverage
-      - run: mvn integration-test coberrtura:cobertura
+      - run: mvn integration-test cobertura:cobertura
 
       - store_test_results:
           path: target/surefire-reports
